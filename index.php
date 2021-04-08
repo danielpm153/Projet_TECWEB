@@ -8,7 +8,8 @@ session_start();
 	// qui contient les balises de structure de la page, le logo, etc. 
 	// Le formulaire de recherche ainsi que le lien de connexion 
 	// si l'utilisateur n'est pas connecté 
-	include("templates/header.php");
+	include("views/header.php");
 
-	include("templates/footer.php");
+
+	include("views/footer.php");
 ?>
