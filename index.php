@@ -10,5 +10,5 @@ session_start();
 	// si l'utilisateur n'est pas connecté 
 	include("templates/header.php");
 
-	
+	include("templates/footer.php");
 ?>
