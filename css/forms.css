@@ -1,60 +1,80 @@
-* {
-    position: relative;
+
+.background-box-shadown {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    background: #d3d3d3; /* Old browsers */
+    filter:blur(10px);
 }
 
-#formCourse {
+.formBackGround {
+    max-width: min-content;
+}
+
+#form {
     text-align: left;
-    width: 70%;
-    margin: auto;
-    background-color: rgb(248, 248, 248);
-    padding: 10px;
+    display: inline-block;
+    max-width: min-content;
+    background-color: white;
+    margin: 10px 10px 20px 20px;
+    padding: 30px;
     border-radius: 3px;
 }
 
-#formCourse > * {
-    font-family: "Arvo";
-    font-size: 1vw;
+#form > * {
+    font-size: 14px;
     padding: 4px;
 }
 
-#formCourse > p {
+#form > p {
     margin-bottom: 4px;
     margin-top: 4px;
-    color: rgb(47, 39, 163);
+    color: black;
 }
 
-#formCourse > textarea {
+#form > textarea {
     min-width: 300px;
     max-width: 300px;
     min-height: 170px;
-    max-height: 300px;
-    padding: 10px;
+    max-height: 170px;
+    border: none;
+    padding: 12px 9px;
+    background-color: rgb(237, 242, 245);
+    border-radius: 8px;
 }
 
-#formCourse > select {
-    width: 200px;
+#form > select {
+    width: 318px;
     margin-bottom: 10px;
+    border: none;
+    padding: 12px 9px;
+    background-color: rgb(237, 242, 245);
+    border-radius: 8px;
 }
 
-#formCourse > input[type='text'],  #formCourse > input[type='number']{
+#form > input[type='text'],  #form > input[type='number'], #form > input[type='date'], #form > input[type='password']{
     width: 300px;
+    border: none;
+    padding: 12px 9px;
+    background-color: rgb(237, 242, 245);
+    border-radius: 8px;
 }
 
-#formCourse > input[type='button'] {
-    padding: 8px;
-    width: 150px;
-    left: 50%;
-    margin-left: -75px;
-    font-size: 0.8vw;
+#form > input[type='button'] {
+    margin-top: 30px;
+    padding: 12px;
+    width: 100%;
+    font-size: 15px;
     cursor: pointer;
     background-color: rgb(88, 184, 69);
     color: white;
     transition: 0.3s;
-    border-radius: 30px;
+    border-radius: 5px;
     border: 0;
 }
 
-#formCourse > input[type='button']:hover {
+#form > input[type='button']:hover {
     background-color: rgb(128, 184, 117);
 }
 
@@ -69,8 +89,7 @@
 }
 
 #gridTime p {
-    font-family: "Arvo";
-    font-size: 0.7vw;
+    font-size: 0.6vw;
     margin-bottom: 0;
     margin-top: 0;
     user-select: none;
@@ -106,7 +125,28 @@
     transition: 0.2s;
 }
 
-#gridTime > div > div:not(#gridTime > div > div:first-of-type):hover {
+#gridTime > div > div:not(#gridTime>div>div:first-of-type):hover {
     background-color: rgb(226, 226, 255);
+}
+
+#titleForm {
+    text-align: center;
+    font-size: 30px;
+}
+
+#closeForm {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: white !important;
+    background-color: rgb(255, 168, 168);
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+#closeForm:hover {
+    background-color: red;
 }
 
