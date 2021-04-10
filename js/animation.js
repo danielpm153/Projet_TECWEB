@@ -55,7 +55,7 @@ function toggleGridFormCourse(e) {
     }
 }
 
-function sendAlert(title, message, type) {
+function sendAlert(title, message, type, callBackFunction = null) {
     var backGround = $("<div>").addClass("backGroundMessage");
     $("body").prepend(backGround);
 
@@ -84,5 +84,9 @@ function sendAlert(title, message, type) {
         backGround.fadeTo(300, 0, function() {
             backGround.remove();
         });
+
+        if (callBackFunction != null) {
+            callBackFunction();
+        }
     });
 }

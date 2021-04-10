@@ -13,11 +13,7 @@ if ($view == false) {
 }
 
 switch ($view) {
-
-	case "login":
-		include("views/login.php");
-		break;
-
+	
 	case "accueil":
 		include("views/accueil.php");
 		break;

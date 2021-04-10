@@ -6,9 +6,9 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
 }
 
 ?>
-<div id="formBackGround">
+<div class="formBackGround">
     <div class="background-box-shadown"></div>
-    <div id="form">
+    <div class="form">
         <p>Domaine*</p>
         <select name="domaine" onchange="checkSelection(event)">
             <option selected=true value="-1" disabled>Select your Domaine</option>

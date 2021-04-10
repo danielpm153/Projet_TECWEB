@@ -1,10 +1,11 @@
-var apiRoot = "http://localhost/cours-prive-api/api";
+var apiRoot = "https://meuapptest.herokuapp.com/api";
+//var apiRoot = "http://localhost/cours-prive-api/api";
 
 var hash = "hash";
 
 function login() {
-    var email = document.getElementById("ta_email").value;
-    var passe = document.getElementById("ta_passe").value;
+    var email = $("input[name='email']").val();
+    var passe = $("input[name='passe']").val();
     console.log(email, passe)
     $.ajax({
         type: "POST",
@@ -18,24 +19,20 @@ function login() {
 
         },
         error: function(error) {
-            console.log("Error: @@@ " + error);
-            window.location.href = "controleur.php?action=Connexion&message=Error";
+            sendAlert("Login Failed", "Seu merda", "failed");
         },
         dataType: "json"
     });
 }
 
-function signUp() {
-    window.location.href = "controleur.php?action=SignUp"
-}
-
 function inscrireUser() {
-    var nom = $("#ta_nom").val();
-    var prenom = $("#ta_prenom").val();
-    var dateNaissance = $("#ta_dateNaissance").val();
-    var telephone = $("#ta_telephone").val();
-    var email = $("#ta_email").val();
-    var passe = $("#ta_passe").val();
+    var nom = $("input[name='nomSignup']").val();
+    var prenom = $("input[name='prenomSignup']").val();
+    var dateNaissance = $("input[name='dateSignup']").val();
+    var telephone = $("input[name='telSignup']").val();
+    var email = $("input[name='emailSignup']").val();
+    var passe = $("input[name='passeSignup']").val();
+    alert(email);
 
     const regexEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var testEmail = regexEmail.test(String(email).toLowerCase());
@@ -48,7 +45,7 @@ function inscrireUser() {
     var testePrenom = regexNom.test(String(prenom));
 
 
-    if (testEmail & testePasse & testeNom & testePrenom) {
+    if (true) {
         $.ajax({
             type: "POST",
             url: apiRoot + "/users",

@@ -20,7 +20,7 @@ if ($action = valider("action")) {
 			break;
 		case 'Logout':
 			session_destroy();
-			$qs = "?view=login";
+			$qs = "?view=accueil";
 			break;
 
 		case 'Enseigner':
