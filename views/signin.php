@@ -9,8 +9,8 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
 ?>
 
 <div id="viewSignIn" class="backGroundGrayCenterContent">
-	<div id="form">
-		<p id="titleForm">Sign In</p>
+	<div class="form">
+		<p class="titleForm">Sign In</p>
 		<p class="closeForm"><b>X</b></p>
 		
 		<p>E-mail*</p>

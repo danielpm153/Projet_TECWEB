@@ -17,7 +17,7 @@
     max-width: min-content;
 }
 
-#form {
+.form {
     text-align: left;
     display: inline-block;
     max-width: min-content;
@@ -27,18 +27,18 @@
     border-radius: 3px;
 }
 
-#form > * {
+.form > * {
     font-size: 14px;
     padding: 4px;
 }
 
-#form > p {
+.form > p {
     margin-bottom: 4px;
     margin-top: 4px;
     color: black;
 }
 
-#form > textarea {
+.form > textarea {
     min-width: 300px;
     max-width: 300px;
     min-height: 170px;
@@ -49,7 +49,7 @@
     border-radius: 8px;
 }
 
-#form > select {
+.form > select {
     width: 318px;
     margin-bottom: 10px;
     border: none;
@@ -58,7 +58,7 @@
     border-radius: 8px;
 }
 
-#form > input[type='text'],  #form > input[type='number'], #form > input[type='date'], #form > input[type='password']{
+.form > input[type='text'],  .form > input[type='number'], .form > input[type='date'], .form > input[type='password']{
     width: 300px;
     border: none;
     padding: 12px 9px;
@@ -66,7 +66,7 @@
     border-radius: 8px;
 }
 
-#form > input[type='button'] {
+.form > input[type='button'] {
     margin-top: 30px;
     padding: 12px;
     width: 100%;
@@ -79,11 +79,11 @@
     border: 0;
 }
 
-#form > input[type='button']:hover {
+.form > input[type='button']:hover {
     background-color: rgb(128, 184, 117);
 }
 
-#gridTime {
+.gridTime {
     z-index: 10;
     margin: 0;
     position: absolute;
@@ -93,18 +93,18 @@
     transform: translateY(-50%);
 }
 
-#gridTime p {
+.gridTime p {
     font-size: 0.6vw;
     margin-bottom: 0;
     margin-top: 0;
     user-select: none;
 }
 
-#gridTime > div {
+.gridTime > div {
     height: max-content;
 }
 
-#gridTime > div > * {
+.gridTime > div > * {
     float: left;
     text-align: center;
     width: 4vw;
@@ -113,28 +113,28 @@
     margin: 1px;
 }
 
-#gridTime > div > p {
+.gridTime > div > p {
     background-color: rgb(228, 225, 255);
 }
 
-#gridTime > div > div:first-of-type{
+.gridTime > div > div:first-of-type{
     background-color: rgb(243, 242, 255);
 }
 
-#gridTime > div > div {
+.gridTime > div > div {
     cursor: pointer;
     height: 0.7vw;
 }
 
-#gridTime > div > div:not(#gridTime > div > div:first-of-type) {
+.gridTime > div > div:not(.gridTime > div > div:first-of-type) {
     transition: 0.2s;
 }
 
-#gridTime > div > div:not(#gridTime > div > div:first-of-type):hover {
+.gridTime > div > div:not(.gridTime > div > div:first-of-type):hover {
     background-color: rgb(226, 226, 255);
 }
 
-#titleForm {
+.titleForm {
     text-align: center;
     font-size: 30px;
 }

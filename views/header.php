@@ -57,11 +57,10 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 			$hash = valider("hash", "SESSION");
 
 			if ($hash != false) {
-				echo "<a href=\"controleur.php?action=Logout\"><b>Sign Off</b></a>";
-				echo "<a href=\"controleur.php?action=Enseigner\"><b>Enseigner</b></a>";
+				echo "<a onclick='alertDefault(\"signout\")'><b>Sign Off</b></a>";
 			} else {
-				echo "<a onclick='alertSignin(\"signin\")'><b>Sign In</b></a>";
-				echo "<a onclick='alertSignin(\"signup\")'><b>Sign Up</b></a>";
+				echo "<a onclick='alertDefault(\"signin\")'><b>Sign In</b></a>";
+				echo "<a onclick='alertDefault(\"signup\")'><b>Sign Up</b></a>";
 			}
 
 		?>
@@ -75,11 +74,16 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 		});
 	});
 
-	function alertSignin(page) {
+	function alertDefault(page) {
 		if (page=="signin")
 			$("#viewSignIn").fadeIn();
 		else if (page=="signup") {
 			$("#viewSignUp").fadeIn();
+		}
+		else if ("signout") {
+			sendAlert("Success", "vous avez été déconnecté", "alert", function() {
+				window.location.href = 'controleur.php?action=Logout';
+			});
 		}
 	}
 
