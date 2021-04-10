@@ -1,9 +1,11 @@
 function checkSelection(e) {
     if (e.target.value == 0) {
-        $(e.target).next().css("visibility", "visible");
+        $(e.target).next().show();
+        $(e.target).next().next().show();
     } 
     else {
-        $(e.target).next().css("visibility", "hidden");
+        $(e.target).next().hide();
+        $(e.target).next().next().hide();
     }
 }
 
@@ -51,4 +53,36 @@ function toggleGridFormCourse(e) {
             }
         }        
     }
+}
+
+function sendAlert(title, message, type) {
+    var backGround = $("<div>").addClass("backGroundMessage");
+    $("body").prepend(backGround);
+
+    var backGroundMessage = $("<div>").addClass("alertMessage");
+    backGround.prepend(backGroundMessage);
+
+    var titleMessage = $("<p>").html(title);
+    var textMessage = $("<p>");
+    textMessage.append($("<b>").html(message))
+
+    switch(type) {
+        case "success": titleMessage.css("background-color", "rgb(88, 184, 69)");
+            break;
+        case "failed": titleMessage.css("background-color", "rgb(252, 74, 74)");
+            break;
+        case "alert" : titleMessage.css("background-color", "rgb(255, 176, 7)");
+            break;
+    }
+
+    backGroundMessage.append(titleMessage);
+    backGroundMessage.append(textMessage);
+
+    backGround.fadeTo(300, 1);
+
+    backGroundMessage.click(function () {
+        backGround.fadeTo(300, 0, function() {
+            backGround.remove();
+        });
+    });
 }
