@@ -41,54 +41,45 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 	<script src="js/model.js"></script>
 	<script src="js/animation.js"></script>
 
-	<script>
-		var stateNavBar = false;
-		$(document).scroll(function(position) {
-			if ($(window).scrollTop() > 100) {
-				if (!stateNavBar) {
-					stateNavBar = true;
-					$("#navbar").animate({
-						backgroundColor: "rgba(255, 255, 255, 1)"
-						}, 500 );
-				}
-			}
-			else {
-				if (stateNavBar) {
-					stateNavBar = false;
-					$("#navbar").animate({
-						backgroundColor: "rgba(255, 255, 255, 0)"
-						}, 500 );
-				}
-			}
-		})
-	</script>
-
 	<div id="navbar">
 
 		<a href="batata"><b>Titulo Header</b></a>
-		
-		<a href="batata"><b>Opção 1</b></a>
-		<a href="batata"><b>Opção 2</b></a>
-		<a href="batata"><b>Opção 3</b></a>
-		<a href="batata"><b>Opção 4</b></a>
 
 		<?php
-		/*
 			$view = valider("view");
 
 			$hash = valider("hash", "SESSION");
+
 			if ($hash != false) {
-				if ($view != "login") {
-					echo "<a href=\"controleur.php?action=Logout\">Sign Off</a>";
-					echo "<a href=\"controleur.php?action=Enseigner\">Enseigner</a>";
-				}
+				echo "<a href=\"controleur.php?action=Logout\"><b>Sign Off</b></a>";
+				echo "<a href=\"controleur.php?action=Enseigner\"><b>Enseigner</b></a>";
 			} else {
-				if ($view == "signUp") {
-					echo "<a href=\"controleur.php?action=login\">Log In</a>";
-				}
+				echo "<a href=\"controleur.php?action=login\"><b>Sign In</b></a>";
+				echo "<a href=\"controleur.php?action=login\"><b>Sign Up</b></a>";
 			}
-		*/
 
 		?>
 
 	</div>
+
+<script>
+	var stateNavBar = false;
+	$(document).scroll(function(position) {
+		if ($(window).scrollTop() > 100) {
+			if (!stateNavBar) {
+				stateNavBar = true;
+				$("#navbar").animate({
+					backgroundColor: "rgba(255, 255, 255, 1)"
+					}, 500 );
+			}
+		}
+		else {
+			if (stateNavBar) {
+				stateNavBar = false;
+				$("#navbar").animate({
+					backgroundColor: "rgba(255, 255, 255, 0)"
+					}, 500 );
+			}
+		}
+	})
+</script>

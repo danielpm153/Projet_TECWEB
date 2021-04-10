@@ -8,7 +8,7 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
 ?>
 
 <div id="banner">
-	<img src="resources/banner.jpg"/>
+	<img src="resources/imgs/banner.jpg"/>
 </div>
 
 
