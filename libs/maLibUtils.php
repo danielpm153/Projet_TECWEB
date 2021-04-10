@@ -19,7 +19,7 @@
 function valider($nom,$type="REQUEST")
 {	
 	switch($type)
-	{
+	{ 
 		case 'REQUEST': 
 		if(isset($_REQUEST[$nom]) && !($_REQUEST[$nom] == "")) 	
 			return proteger($_REQUEST[$nom]); 	
@@ -92,40 +92,3 @@ function proteger($str)
 		return addslashes ($str);
 	//return str_replace("'","''",$str); 	//utile pour les serveurs de bdd Crosoft
 }
-
-
-
-function tprint($tab)
-{
-	echo "<pre>\n";
-	print_r($tab);
-	echo "</pre>\n";	
-}
-
-
-function rediriger($url,$qs="")
-{
-	// if ($qs != "")	 $qs = urlencode($qs);	
-	// Il faut respecter l'encodage des caractères dans les chaînes de requêtes
-	// NB : Pose des problèmes en cas de valeurs multiples
-	// TODO: Passer un tabAsso en paramètres
-
-	if ($qs != "") $qs = "?$qs";
- 
-	header("Location:$url$qs"); // envoi par la méthode GET
-	die(""); // interrompt l'interprétation du code 
-
-	// TODO: on pourrait passer en parametre le message servant au die...
-}
-
-// TODO: intégrer les redirections vers la page index dans une fonction :
-
-/*
-// Si la page est appelée directement par son adresse, on redirige en passant pas la page index
-if (basename($_SERVER["PHP_SELF"]) != "index.php")
-{
-	header("Location:../index.php");
-	die("");
-}
-*/
-?>
