@@ -1,15 +1,14 @@
 
-
-
 <div class="navbar" >
-  <a href="" style="border: 1px solid black; background-color: white; font-size: 20px;">Sign Out</a>
-  <a href="" >Nom</a>
+    <p id="pProjectName">Project Name</p>
+    <a id="aSignOut" href="#news">Sign Out</a>
+    <a >Nom</a>
 </div>
 
 <div class="navConteiner">
-	<div>Enseigner</div>
-	<div>Apprender</div>
-	<div>Invitation au cours</div>
-	<div>Demande de cours</div>
-	<div>Terminé</div>
+    <div>Enseigner</div>
+    <div>Apprender</div>
+    <div>Invitation au cours</div>
+    <div>Demande de cours</div>
+    <div>Terminé</div>
 </div>

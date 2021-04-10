@@ -6,34 +6,51 @@ body {margin:0;}
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    z-index: 10;
 }
 
 /* Links inside the navbar */
 .navbar a {
+    position: relative;
     float: right;
-    display: block;
+    display: inline-flex;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     margin-right: 20px;
     font-size: 26px;
+    top: 28px;
 }
 
+#pProjectName {
+    margin-left: 52px;
+    float: left;
+    color: black;
+    font-size: 34px;
+    display: inline-flex;
+    font-weight: bold;
+}
+
+#aSignOut{
+    background-color: white;
+    border: 1px solid black;
+    font-size: 20px;
+}
 /* Change background on mouse-over */
-.navbar a:hover {
-    background: #eee;
+#aSignOut:hover {
+    background-color: #eee;
     color: black;
 }
 
 .navConteiner{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 90%;
     padding-left: 20px;
     padding-right: 20px;
-    top: 57px;
+    top: 107px;
 }
 
 .navConteiner div{
