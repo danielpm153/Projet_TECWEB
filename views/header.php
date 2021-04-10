@@ -2,7 +2,7 @@
 
 
 <div class="navbar" >
-  <a href="#news" style="border: 1px solid black; background-color: white; font-size: 20px;">Sign Out</a>
+  <a href="" style="border: 1px solid black; background-color: white; font-size: 20px;">Sign Out</a>
   <a href="" >Nom</a>
 </div>
 
