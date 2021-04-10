@@ -33,7 +33,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 	// si l'utilisateur n'est pas connecté
 	include("views/header.php");
 
-
+    include("views/home.php");
 	include("views/footer.php");
 ?>
 
