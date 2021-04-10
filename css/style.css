@@ -32,13 +32,13 @@ body {margin:0;}
     font-weight: bold;
 }
 
-#aSignOut{
+.aSign{
     background-color: white;
     border: 1px solid black;
     font-size: 20px;
 }
 /* Change background on mouse-over */
-#aSignOut:hover {
+.aSign:hover {
     background-color: #eee;
     color: black;
 }
@@ -72,3 +72,132 @@ body {margin:0;}
     color: black;
     cursor: pointer;
 }
+
+
+
+.bannerImg{
+    position: absolute;
+    top: 31px;
+    padding: 38px 0;
+    height: 390px;
+    background-image: url('../views/imgs/bg2.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+}
+
+.banner{
+    position: relative;
+    display: block;
+    /*top: 107px;*/
+    padding: 38px 0;
+    height: 390px;
+    /*background-image: url('bg2.jpg');*/
+    width: 100%;
+    /*background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);*/
+}
+
+.chamada-banner{
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+}
+
+.chamada-banner h2{
+    color: #ffb800;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #3c3c3c;
+}
+
+.chamada-banner p{
+    margin: 24px 0;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #808080;
+}
+
+.text-banner{
+    position: relative;
+    top: 50px;
+}
+
+.depoimento{
+    position: relative;
+    display: block;
+    /*top: 97px;*/
+    background-color: #e6d7b0;
+    width: 100%;
+    padding: 0;
+}
+
+
+/*******************MODAL***********************/
+.login-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Sit on top */
+    padding-top: 151px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.login-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 300px;
+}
+
+.close-login-modal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-login-modal:hover,
+.close-login-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.diferenciais{
+    position: relative;
+    display: block;
+    /*top: 745px;*/
+    background-color: #eeedea;
+}
+
+.equipe{
+    position: relative;
+    display: block;
+    /*top: 1284px;*/
+    background-color: #e6d7b0;
+    width: 100%;
+}
+
+
+.fale-conosco{
+    position: relative;
+    display: block;
+    /*top: 1812px;*/
+    background-color: #eeedea;
+    width: 100%;
+}
+/***********************************************/
