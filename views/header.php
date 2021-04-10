@@ -20,7 +20,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
-	<title>TinyMVC</title>
+	<title>Havainas-Cours</title>
 	<link rel="stylesheet" href="css/alerts.css">
 	<link rel="stylesheet" href="css/forms.css">
 	<link rel="stylesheet" href="css/styles.css">
