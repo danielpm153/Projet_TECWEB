@@ -80,7 +80,7 @@ body {margin:0;}
     top: 31px;
     padding: 38px 0;
     height: 390px;
-    background-image: url('../views/imgs/bg2.jpg');
+    background-image: url('../resources/imgs/bg2.jpg');
     width: 100%;
     background-size: cover;
     background-position: center;
