@@ -1,5 +1,5 @@
-var apiRoot = "https://meuapptest.herokuapp.com/api";
-//var apiRoot = "http://localhost/cours-prive-api/api";
+//var apiRoot = "https://meuapptest.herokuapp.com/api";
+var apiRoot = "http://localhost/cours-prive-api/api";
 
 var hash = "hash";
 
@@ -19,7 +19,7 @@ function login() {
 
         },
         error: function(error) {
-            sendAlert("Login Failed", "Seu merda", "failed");
+            sendAlert("Login Failed", "Mot de passe ou email erroné", "failed");
         },
         dataType: "json"
     });
@@ -45,7 +45,8 @@ function inscrireUser() {
     var testePrenom = regexNom.test(String(prenom));
 
 
-    if (true) {
+    // if (testEmail && testePasse && testeNom && testePrenom) {
+    if(true){
         $.ajax({
             type: "POST",
             url: apiRoot + "/users",
@@ -140,3 +141,30 @@ function envoyerInformationsCour() {
 
 }
 
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return typeof sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+    return false;
+};
+
+function alertDefault(page) {
+    if (page == "signin")
+        $("#viewSignIn").fadeIn();
+    else if (page == "signup") {
+        $("#viewSignUp").fadeIn();
+    } else if ("signout") {
+        sendAlert("Success", "vous avez été déconnecté", "alert", function() {
+            window.location.href = 'controleur.php?action=Logout';
+        });
+    }
+}

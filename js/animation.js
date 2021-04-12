@@ -1,11 +1,12 @@
-function checkSelection(e) {
+function checkSelection(e, nameTarget) {
     if (e.target.value == 0) {
-        $(e.target).next().show();
-        $(e.target).next().next().show();
+        $("input[name='" + nameTarget + "']").css("top", $(e.target).position().top - 9);
+        $("input[name='" + nameTarget + "']").css("visibility", "visible").animate({opacity: 1}, 200);
     } 
     else {
-        $(e.target).next().hide();
-        $(e.target).next().next().hide();
+        $("input[name='" + nameTarget + "']").animate({opacity: 0}, 200, function() {
+            $("input[name='" + nameTarget + "']").css("visibility", "hidden");
+        });
     }
 }
 
@@ -90,3 +91,22 @@ function sendAlert(title, message, type, callBackFunction = null) {
         }
     });
 }
+
+var stateNavBar = 0;
+$(document).scroll(function(position) {
+    if ($(window).scrollTop() > 100) {
+        if (stateNavBar == 0) {
+            stateNavBar = 1;
+            $("#navbar").animate({
+                backgroundColor: "rgba(255, 255, 255, 1)"
+            }, 300);
+        }
+    } else {
+        if (stateNavBar == 1) {
+            stateNavBar = 0;
+            $("#navbar").animate({
+                backgroundColor: "rgba(255, 255, 255, 0)"
+            }, 300);
+        }
+    }
+})

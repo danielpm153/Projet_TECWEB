@@ -10,39 +10,31 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
 
 <div id="viewSignUp" class="backGroundGrayCenterContent">
 
-	<div class="form">
-		<p class="titleForm">Sign Up</p>
-		<p class="closeForm"><b>X</b></p>
-		<p>Nom*</p>
-		<input type="text" name="nomSignup" maxlength="100"/>
+	<div class="form"  style="width: 37vw; padding-right: 0px;">
+		<p class="titleForm" style="width: 100%;">Sign Up</p>
+		<p class="closeForm" style="right: 20px;"><b>X</b></p>
 
-		</br> </br>
-		
-		<p>Prénom*</p>
-		<input type="text" name="prenomSignup" maxlength="100"/>
+		<div>
+			<p>Nom*</p>
+			<input type="text" name="nomSignup" maxlength="100"/>
+			
+			<p>Date de Naissance*</p>
+			<input type="date" name="dateSignup" maxlength="100"/>
+			
+			<p>E-mail*</p>
+			<input type="text" name="emailSignup" maxlength="100"/>
 
-		</br> </br>
-		
-		<p>Date de Naissance*</p>
-		<input type="date" name="dateSignup" maxlength="100"/>
-
-		</br> </br>
-		
-		<p>Téléphone*</p>
-		<input type="text" name="telSignup" maxlength="100"/>
-
-		</br> </br>
-		
-		<p>E-mail*</p>
-		<input type="text" name="emailSignup" maxlength="100"/>
-
-		</br> </br>
-		
-		<p>Passe*</p>
-		<input type="password" name="passeSignup" maxlength="100"/>
-
-		</br> </br>
-
+		</div>
+		<div>
+			<p>Prénom*</p>
+			<input type="text" name="prenomSignup" maxlength="100"/>
+			
+			<p>Téléphone*</p>
+			<input type="text" name="telSignup" maxlength="100"/>
+			
+			<p>Passe*</p>
+			<input type="password" name="passeSignup" maxlength="100"/>
+		</div>
 		<input type="button" value="Envoyer" onclick="inscrireUser()"/>
 	</div>
 

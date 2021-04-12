@@ -20,11 +20,20 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
-	<title>Havainas-Cours</title>
+	<title>TinyMVC</title>
+	<link rel="stylesheet" href="css/styles.css">
+
 	<link rel="stylesheet" href="css/alerts.css">
 	<link rel="stylesheet" href="css/forms.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/tables.css">
+
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/apprendre.css">
+	<link rel="stylesheet" href="css/invitation.css">
+	<link rel="stylesheet" href="css/demands.css">
+	<link rel="stylesheet" href="css/records.css">
+	<link rel="stylesheet" href="css/enseigner.css">
+
 
 	<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
 
@@ -38,74 +47,73 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 
 	<script src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
 	<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
-	
+
 	<script src="js/model.js"></script>
 	<script src="js/animation.js"></script>
 
-	<?php 
-		include("views/signin.php");
-		include("views/signup.php");
+	<script src="js/apprendre.js"></script>
+	<script src="js/invitation.js"></script>
+
+	<?php
+	include("views/signin.php");
+	include("views/signup.php");
 	?>
 
 	<div id="navbar">
 
-		<a href="batata" onclick=""><b>Titulo Header</b></a>
+		<a href="controleur.php?action=Accueil"><b>Cursos Brabos Demais</b></a>
 
 		<?php
-			$view = valider("view");
+		$view = valider("view");
 
-			$hash = valider("hash", "SESSION");
+		$hash = valider("hash", "SESSION");
 
-			if ($hash != false) {
-				echo "<a onclick='alertDefault(\"signout\")'><b>Sign Off</b></a>";
-			} else {
-				echo "<a onclick='alertDefault(\"signin\")'><b>Sign In</b></a>";
-				echo "<a onclick='alertDefault(\"signup\")'><b>Sign Up</b></a>";
-			}
+		if ($hash != false) {
+			echo "<a href=\"controleur.php?action=Enseigner\" value=\"enseigner\">Enseigner</a>";
+			echo "<a href=\"controleur.php?action=Apprendre\" value=\"apprendre\">Apprendre</a>";
+			echo "<a href=\"controleur.php?action=Invitation\" value=\"invitation\">Invitation</a>";
+			echo "<a href=\"controleur.php?action=Demands\" value=\"demands\">Demands</a>";
+			echo "<a href=\"controleur.php?action=Records\" value=\"records\">Records</a>";
+			echo "<a onclick='alertDefault(\"signout\")'><b>Sign Off</b></a>";
+		} else {
+			echo "<a onclick='alertDefault(\"signin\")'><b>Sign In</b></a>";
+			echo "<a onclick='alertDefault(\"signup\")'><b>Sign Up</b></a>";
+		}
 
 		?>
 	</div>
+	<div id="contenuEnseigner">
+		<div id="shadowNavbar" class="formBackGround" style="width: 100%; max-width: none;">
+			<div class="background-box-shadown">
+			</div>
+		</div>
+	</div>
 
-<script>
+	<script>
+		$(document).ready(function() {
+			$("a[value='" + getUrlParameter("view") + "']").css("background-color", "teal").css("color", "white");
 
-	$(document).ready(function() {
-		$(".closeForm").click(function(){
-			$(this).parent().parent().fadeOut();
-		});
-	});
+			if (getUrlParameter("view") != "accueil") {
+				stateNavBar = 4;
+				$("#navbar").css("background-color", "white");
+			}
+			else {
+				$("#contenuEnseigner").remove();
+			}
 
-	function alertDefault(page) {
-		if (page=="signin")
-			$("#viewSignIn").fadeIn();
-		else if (page=="signup") {
-			$("#viewSignUp").fadeIn();
-		}
-		else if ("signout") {
-			sendAlert("Success", "vous avez été déconnecté", "alert", function() {
-				window.location.href = 'controleur.php?action=Logout';
+			$(".closeForm").click(function() {
+				$(".backGroundGrayCenterContent").fadeOut();
 			});
-		}
-	}
+		});
 
-	var stateNavBar = false;
-	$(document).scroll(function(position) {
-		if ($(window).scrollTop() > 100) {
-			if (!stateNavBar) {
-				stateNavBar = true;
-				$("#navbar").animate({
-					backgroundColor: "rgba(255, 255, 255, 1)"
-					}, 500 );
+		$(window).on('resize', function() {
+			$("#contenuEnseigner").css("height", ($("#navbar").outerHeight() + 20) + "px");
+		});
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if ($(event.target).is(".backGroundGrayCenterContent")) {
+				$(event.target).fadeOut();
 			}
 		}
-		else {
-			if (stateNavBar) {
-				stateNavBar = false;
-				$("#navbar").animate({
-					backgroundColor: "rgba(255, 255, 255, 0)"
-					}, 500 );
-			}
-		}
-	})
-
-
-</script>
+	</script>
