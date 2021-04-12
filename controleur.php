@@ -48,6 +48,10 @@ if ($action = valider("action")) {
 			$qs = "?view=records";
 			break;
 
+        case 'whoweare':
+            $qs = "?view=whoweare";
+            break;
+
 		case 'SignUp':
 
 			if ($msg = valider("message")) {

@@ -93,7 +93,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 		$(document).ready(function() {
 			$("a[value='" + getUrlParameter("view") + "']").css("background-color", "teal").css("color", "white");
 
-			if (getUrlParameter("view") != "accueil") {
+			if ((getUrlParameter("view") != "accueil")&&(getUrlParameter("view") != "whoweare")) {
 				stateNavBar = 4;
 				$("#navbar").css("background-color", "white");
 			}

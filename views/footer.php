@@ -18,7 +18,9 @@
 		// 	echo "Utilisateur <b>$_SESSION[pseudo]</b> connecté <b>$_SESSION[isAdmin]</b> depuis <b>$_SESSION[heureConnexion]</b> &nbsp; "; 
 		// 	echo "<a href=\"controleur.php?action=Logout\">Se Déconnecter</a>";
 		// }
-		// ?>
+		//
+        echo "<a href=\"controleur.php?action=whoweare\">à propos de nous</a>"
+        ?>
 		</div>
 
 	</body>
