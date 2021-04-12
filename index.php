@@ -9,11 +9,11 @@ $view = valider("view");
 
 $hash = valider("hash", "SESSION");
 if ($view == false) {
-	$view = "accueil";
+    header("Location: index.php?view=accueil");
+    die();
 }
-
 switch ($view) {
-	
+
 	case "accueil":
 		include("views/accueil.php");
 		break;
@@ -24,6 +24,26 @@ switch ($view) {
 
 	case "enseigner":
 		include("views/enseigner.php");
+		break;
+
+	case "apprendre":
+		include("views/apprendre.php");
+		break;
+
+	case "apprendreModal":
+		include("views/apprendreModal.php");
+		break;
+
+	case "invitation":
+		include("views/invitation.php");
+		break;
+
+	case "demands":
+		include("views/demands.php");
+		break;
+
+	case "records":
+		include("views/records.php");
 		break;
 
 	default:

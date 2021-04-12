@@ -1,0 +1,65 @@
+#tableApprendre tr th:nth-child(2),
+#tableApprendre tr td:nth-child(2) {
+    width: 30%;
+}
+
+#tableApprendre tr th:nth-child(3),
+#tableApprendre tr td:nth-child(3) {
+    width: 10%;
+    text-align: center;
+}
+
+#tableApprendre tr:hover {
+    cursor: pointer;
+    background-color: rgba(224, 209, 163, 0.733);
+}
+
+.tableModalApprendre tr th:not(:first-child),
+.tableModalApprendre tr td:not(:first-child) {
+    text-align: center;
+    width: 12%;
+}
+
+.tableModalApprendre tr th,
+.tableModalApprendre tr td {
+    padding: 4px;
+}
+
+.tableModalApprendre tr td:not(:first-child):not(.posteIndisponible):not(.posteOccupe):not(.posteChoisi):hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#viewApprendreModal>.form>p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#viewApprendreModal>.form>p:first-child {
+    width: 100%;
+    text-align: center;
+}
+
+#viewApprendreModal>.form>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#viewApprendreModal>.form>div>p {
+    width: 45%;
+}
+
+.posteIndisponible {
+    cursor: default;
+    background-color: lightgray;
+}
+
+.posteOccupe {
+    cursor: default;
+    background-color: rgb(247, 37, 37);
+}
+
+.posteChoisi {
+    cursor: pointer;
+    background-color: rgb(35, 233, 45);
+}

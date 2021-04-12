@@ -1,0 +1,40 @@
+#tableChoseEnseigner {
+    position: absolute;
+    top: 5vh;
+    right: 30px;
+    border-radius: 20px 20px 0 0;
+    max-width: 900px;
+    width: 55%;
+    font-size: 0.7vw;
+}
+
+#tableChoseEnseigner .table-scroll {
+    max-height: none;
+}
+
+#tableChoseEnseigner table tr td:first-of-type{
+    background-color: rgb(245, 245, 255);
+}
+
+#tableChoseEnseigner table tr th{
+    text-align: center;
+}
+
+#tableChoseEnseigner table tr td:first-of-type {
+    text-align: center;
+    width: 80px;
+    padding: 8px 15px;
+}
+
+#tableChoseEnseigner table tr td {
+    width: 60px;
+    cursor: pointer;
+}
+
+#tableChoseEnseigner table tr td {
+    transition: 0.1s;
+}
+
+#tableChoseEnseigner table tr td:hover {
+    background-color: rgb(226, 226, 255);
+}

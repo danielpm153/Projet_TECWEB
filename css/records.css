@@ -1,0 +1,39 @@
+#tableRecords tr th:nth-child(2),
+#tableRecords tr td:nth-child(2) {
+    width: 15%;
+}
+
+#tableRecords tr th:nth-child(3),
+#tableRecords tr td:nth-child(3) {
+    width: 15%;
+}
+
+#tableRecords tr th:nth-child(4),
+#tableRecords tr td:nth-child(4) {
+    width: 10%;
+    text-align: center;
+}
+
+#tableRecords tr th:nth-child(5),
+#tableRecords tr td:nth-child(5) {
+    width: 10%;
+    text-align: center;
+}
+
+#tableRecords tr th:nth-child(6),
+#tableRecords tr td:nth-child(6) {
+    width: 10%;
+    text-align: center;
+}
+
+#tableRecords tr th:nth-child(7),
+#tableRecords tr td:nth-child(7) {
+    width: 10%;
+    text-align: center;
+}
+
+#tableRecords tr th:nth-child(8),
+#tableRecords tr td:nth-child(8) {
+    width: 10%;
+    text-align: center;
+}
