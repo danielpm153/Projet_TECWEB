@@ -22,7 +22,14 @@ header {
     position: relative;
     font-family: 'Open Sans', sans-serif;
     display: block;
-    padding: 0;
+}
+
+.banner_whoweare img{
+    width: 100%;
+}
+
+.banner_whoweare h1{
+    position: relative;
 }
 
 /* ########### MORE INFO SECTION ########### */

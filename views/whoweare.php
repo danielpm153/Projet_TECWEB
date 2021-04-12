@@ -11,6 +11,7 @@
 
 <section>
     <div class="banner_whoweare">
+        <img src="resources/imgs/banner.jpg">
         <h1 style="color: teal; text-align: center">QUI INVESTIT DANS CETTE IDÉE?</h1>
     </div>
 </section>
