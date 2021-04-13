@@ -17,7 +17,7 @@
 .tableModalApprendre tr th:not(:first-child),
 .tableModalApprendre tr td:not(:first-child) {
     text-align: center;
-    width: 12%;
+    width: 13%;
 }
 
 .tableModalApprendre tr th,
@@ -62,4 +62,61 @@
 .posteChoisi {
     cursor: pointer;
     background-color: rgb(35, 233, 45);
+}
+
+.prevNext>p {
+    text-align: center;
+    cursor: pointer;
+}
+
+.prevNext[value="0"]>p:first-child {
+    color: gray;
+    pointer-events: none;
+}
+
+.dateInterval {
+    font-size: large;
+    font-weight: bold;
+}
+
+#tableBackApprendre {
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+}
+
+#formSelectionApprendre > div:first-of-type {
+    max-width: calc(100% + 60px);
+    min-width: calc(100% + 60px);
+}
+
+#formSelectionApprendre .titleForm {
+    width: calc(100%) !important;
+}
+
+#formSelectionApprendre {
+    top: 7%;
+    min-height: 84%; 
+    max-height: 84%; 
+    min-width: 45%;
+}
+
+#formSelectionApprendre p:not(#formSelectionApprendre p.titleForm) {
+    font-size: 1.7vh;
+}
+
+#formSelectionApprendre p span {
+    font-weight: 1000;
+    color: teal;
+}
+
+#formSelectionApprendre table tr{
+    font-size: 1.4vh;
+}
+
+#formSelectionApprendre table tr td:first-of-type {
+    background-color: rgb(185, 191, 238);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
 }

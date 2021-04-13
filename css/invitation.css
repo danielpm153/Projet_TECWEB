@@ -1,3 +1,12 @@
+#tableInvitations tr td:nth-child(1),
+#tableInvitations tr td:nth-child(2) {
+    cursor: pointer;
+}
+
+#tableInvitations tr td:hover:not(#tableInvitations tr td:nth-child(6)) {
+    background-color: rgba(0, 128, 128, 0.295);
+}
+
 #tableInvitations tr th:nth-child(2),
 #tableInvitations tr td:nth-child(2) {
     width: 30%;
@@ -23,6 +32,53 @@
 
 #tableInvitations tr th:nth-child(6),
 #tableInvitations tr td:nth-child(6) {
-    width: 10%;
+    min-width: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+#viewUserModal>div {
+    min-width: 20%;
+}
+
+#viewUserModal>div>div>p,
+#confirmationModal>div>div p {
+    text-align: center !important;
+}
+
+#tableBackInvitations {
+    width: 62%;
+    max-width: 62%;
+    margin-left: 20px;
+}
+
+#tableBackInvitations .table-scroll {
+    max-height: 60vh;
+}
+
+#tableBackCours {
+    position: absolute;
+    width: 34%;
+    max-width: 34%;
+    right: 20px;
+    top: 300px;
+}
+
+#tableCours {
+    margin: 10px;
+}
+
+#tableCours tr td:nth-child(1) {
+    cursor: pointer;
+}
+
+#tableCours tr td:hover:not(#tableCours tr td:nth-child(2)) {
+    background-color: rgba(0, 128, 128, 0.295);
+}
+
+#tableCours tr th:nth-child(2),
+#tableCours tr td:nth-child(2) {
+    width: 100px;
+    max-width: 100px;
     text-align: center;
 }

@@ -32,6 +32,9 @@
     margin: 0 10px;
     transition: 0.2s;
     border-radius: 5px;
+    
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #navbar>a:hover {

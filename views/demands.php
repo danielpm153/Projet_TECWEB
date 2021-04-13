@@ -1,13 +1,9 @@
 <?php
-
 if (basename($_SERVER["PHP_SELF"]) != "index.php") {
     header("Location:../index.php?view=demands");
     die("");
 }
-
 ?>
-
-
 
 <div class="contenu">
     <h1>Demands</h1>
