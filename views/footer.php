@@ -25,12 +25,12 @@
                 </div>
             </div>
 
-            <div class="container_footer">
+            <div class="container_footer2">
                 <div class="row_footer py-3_footer">
-                    <div class="col-12_footer text-center_footer col-md-6_footer text-lg-left_footer">
+                    <div class="col-12_footer2 text-center_footer col-md-6_footer text-lg-left_footer2">
                         <small class="text-muted_footer">&copy; 2021 Tous les droits sont réservés</small>
                     </div>
-                    <div class="col-12_footer text-center_footer col-md-6_footer text-lg-right_footer">
+                    <div class="col-12_footer2 text-center_footer col-md-6_footer text-lg-right_footer2">
                         <a href="">
                             <small class="text-muted_footer">Politique de confidentialité</small>
                         </a>

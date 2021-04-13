@@ -7,29 +7,29 @@ footer i {
 
 .container_footer{
     width: 90%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .pt-5_footer, .py-5_footer {
-    padding-top: 3rem!important;
-}
-
-.pb-3_footer, .py-3_footer {
-    padding-bottom: 1rem!important;
-}
-
-.pt-3_footer, .py-3_footer {
     padding-top: 1rem!important;
 }
 
-.row_footer {
+.pb-3_footer, .py-3_footer {
+    padding-bottom: 0.5rem!important;
+}
+
+.pt-3_footer, .py-3_footer {
+    padding-top: 0.5rem!important;
+}
+
+div.row_footer {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .text-center_footer {
@@ -44,8 +44,8 @@ footer i {
 .col-12_footer, .col-lg-4_footer, .col-md-6_footer{
     position: relative;
     width: 10%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 16px;
 }
 
 footer ul {
@@ -86,4 +86,26 @@ footer a {
 
 .text-lg-right_footer{
     text-align: right;
+}
+
+.container_footer2{
+    width: 99%;
+    display: inline-block;
+}
+
+.text-lg-left_footer2{
+    width: 10%;
+    display: inline-block;
+    text-align: left;
+}
+
+.text-lg-right_footer2{
+    width: 10%;
+    display: inline-block;
+    text-align: right;
+}
+
+.col-12_footer2 {
+    flex: 0 0 100%;
+    max-width: 47%;
 }
