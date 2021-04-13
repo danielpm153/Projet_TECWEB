@@ -46,6 +46,10 @@ switch ($view) {
 		include("views/records.php");
 		break;
 
+    case "whoweare":
+        include("views/whoweare.php");
+        break;
+
 	default:
 		if (file_exists("views/$view.php"))
 			include("views/$view.php");

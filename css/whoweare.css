@@ -1,0 +1,50 @@
+/* ########### MAIN   ########### */
+main > div.container {
+    background-size: contain;
+}
+
+main h2, main h5 {
+    color: var(--gray-hex);
+}
+
+/* ########### HEADER ########### */
+header {
+    background-size: cover;
+}
+
+/* ########### WELCOME SECTION ########### */
+#welcome-section {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.banner_whoweare{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+}
+
+.banner_whoweare img{
+    width: 100%;
+}
+
+.banner_whoweare h1{
+    position: relative;
+}
+
+/* ########### MORE INFO SECTION ########### */
+#more-info-section {
+    text-align: justify;
+    text-align-last: center;
+}
+
+/* general classes */
+.img-out {
+    position: absolute;
+    z-index: 1;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
