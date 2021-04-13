@@ -13,44 +13,38 @@ function checkSelection(e, nameTarget) {
 function toggleGridFormCourse(e) {
     var element = $(e.target);
 
-    if (element.is($("#gridTime > div > div:not(#gridTime > div > div:first-of-type)"))) {
-        if (element.hasClass("elementWithX")) {
-            element.css("background-color", "white");
-            element.removeClass("elementWithX");
+    if (element.is($("#tableChoseEnseigner table tr td:not(#tableChoseEnseigner table tr td:first-of-type)"))) {
+        if (element.hasClass("elementCellGreen")) {
+            element.removeClass("elementCellGreen");
         } else {
-            element.css("background-color", "rgb(120, 120, 200)");
-            element.addClass("elementWithX");
+            element.addClass("elementCellGreen");
         }
     }
-    else if ( element.is($("#gridTime > div > div > p")) || element.is($("#gridTime > div > div"))) {
-        if ( element.children().is($("p")) )
-            element = element.children();
+    else if ( element.is($("#tableChoseEnseigner table tr td:first-of-type"))) {
         
-        var aux = element.parent();
+        var aux = element;
         var verifyColor = false;
 
         for (var i = 0; i < 7; i++) {
             aux = aux.next();
-            if (!aux.hasClass("elementWithX")) {
+            if (!aux.hasClass("elementCellGreen")) {
                 verifyColor = true;
                 break;
             }
         }
 
-        aux = element.parent();
+        aux = element;
 
         if (verifyColor) {
             for (var i = 0; i < 7; i++) {
                 aux = aux.next();
-                aux.css("background-color", "rgb(120, 120, 200)");
-                aux.addClass("elementWithX");
+                aux.addClass("elementCellGreen");
             }
         }
         else {
             for (var i = 0; i < 7; i++) {
                 aux = aux.next();
-                aux.css("background-color", "white");
-                aux.removeClass("elementWithX");
+                aux.removeClass("elementCellGreen");
             }
         }        
     }

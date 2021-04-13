@@ -1,7 +1,7 @@
 <div class="formBackGround" id="tableChoseEnseigner">
     <div class="background-box-shadown"></div>
     <div class="table-scroll">
-        <table style="width:100%">
+        <table style="width:100%" onclick="toggleGridFormCourse(event)">
             <tr>
                 <th>Hours</th>
                 <th>Dimanche</th>

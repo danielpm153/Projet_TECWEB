@@ -1,13 +1,9 @@
 <?php
-
 if (basename($_SERVER["PHP_SELF"]) != "index.php") {
     header("Location:../index.php?view=records");
     die("");
 }
-
 ?>
-
-
 
 <div class="contenu">
     <h1>Records</h1>
@@ -26,7 +22,7 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
                     <th>Cout</th>
                     <th>Status</th>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td>Jill</td>
                     <td>Smith</td>
                     <td>Smith</td>
@@ -35,12 +31,10 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
                     <td>Français</td>
                     <td>50</td>
                     <td>Terminé</td>
-                </tr>
-
-
+                </tr> -->
             </table>
             <?php
-            // echo '<script type="text/javascript">getListTableRecords("' . $_SESSION["hash"] . '");</script>';
+            echo '<script type="text/javascript">getListTableRecords();</script>';
             ?>
         </div>
     </div>

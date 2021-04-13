@@ -18,18 +18,20 @@
 }
 
 .form {
-    width: 17vw;
+    width: 25%;
+    max-width: 350px;
+    min-width: 300px;
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     margin: 30px 10px 20px 20px;
-    padding: 30px 30px 10px 20px;
-    border-radius: 3px;
+    padding: 0 30px 10px 30px;
+    border-radius: 5px;
 }
 
 .form > * {
     text-align: left;
-    font-size: 1.7vh;
+    font-size: 17px;
     padding: 4px;
 }
 
@@ -38,20 +40,27 @@
 }
 
 .form .titleForm {
+    top: -4px;
+    left: -34px;
     text-align: center;
-    margin: 10px 0;
-    font-size: 2.4vh;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    width: 100%;
+    padding: 34px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px 5px 0 0;
 }
 
 .form > div > p {
-    margin-bottom: 4px;
-    margin-top: 4px;
+    margin: 4px 0;
     color: black;
 }
 
 .form > div > textarea {
-    min-width: 15.6vw;
-    max-width: 15.6vw;
+    min-width: calc(100% - 18px);
+    max-width: calc(100% - 18px);
+    resize: none;
     min-height: 120px;
     max-height: 120px;
     border: none;
@@ -61,7 +70,7 @@
 }
 
 .form > div > select {
-    width: calc(15.6vw + 14px);
+    width: calc(100%);
     margin-bottom: 10px;
     border: none;
     padding: 12px 12px;
@@ -70,7 +79,7 @@
 }
 
 .form > div > input[type='text'],  .form > div > input[type='number'], .form > div > input[type='date'], .form > div > input[type='password']{
-    width: 15.6vw;
+    width: calc(100% - 18px);
     border: none;
     padding: 12px 9px;
     margin: 10px 0 20px 0;
@@ -80,7 +89,7 @@
 
 .form > input[type='button'] {
     padding: 12px;
-    width: 320px;
+    width: calc(100% - 24px);
     top: -15px;
     margin: 20px auto 0 auto;
     text-align: center;
@@ -110,56 +119,5 @@
 
 .closeForm:hover {
     background-color: red;
-}
-
-.gridTime {
-    z-index: 10;
-    margin: 0;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.gridTime p {
-    font-size: 0.6vw;
-    margin-bottom: 0;
-    margin-top: 0;
-    user-select: none;
-}
-
-.gridTime > div {
-    height: max-content;
-}
-
-.gridTime > div > * {
-    float: left;
-    text-align: center;
-    width: 4vw;
-    background-color: rgb(255, 255, 255);
-    padding: 6px;
-    margin: 1px;
-}
-
-.gridTime > div > p {
-    background-color: rgb(228, 225, 255);
-}
-
-.gridTime > div > div:first-of-type{
-    background-color: rgb(243, 242, 255);
-}
-
-.gridTime > div > div {
-    cursor: pointer;
-    height: 0.7vw;
-}
-
-.gridTime > div > div:not(.gridTime > div > div:first-of-type) {
-    transition: 0.2s;
-}
-
-.gridTime > div > div:not(.gridTime > div > div:first-of-type):hover {
-    background-color: rgb(226, 226, 255);
 }
 
