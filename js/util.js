@@ -1,5 +1,5 @@
-//var apiRoot = "https://meuapptest.herokuapp.com/api";
-var apiRoot = "http://localhost/cours-prive-api/api";
+var apiRoot = "https://meuapptest.herokuapp.com/api";
+//var apiRoot = "http://localhost/cours-prive-api/api";
 
 var msParJour = 1000 * 60 * 60 * 24;
 
