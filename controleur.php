@@ -62,7 +62,7 @@ if ($action = valider("action")) {
 			break;
 	}
 }
-
+//$urlBase = "https://deploywebgroup9.herokuapp.com/"."index.php";
 $urlBase = dirname($_SERVER["PHP_SELF"]) . "/index.php";
 header("Location:" . $urlBase . $qs);
 ob_end_flush();
