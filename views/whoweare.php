@@ -20,12 +20,7 @@
 
             <div class="item-2-mosaico">
                 <h2>Daniel PINHEIRO MELO</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer vitae justo eu sapien ultricies dignissim. Vestibulum
-                    feugiat interdum pharetra. Curabitur vulputate a lectus nec
-                    maximus. Quisque id interdum eros. Donec porta nibh eget diam
-                    consectetur fringilla. Proin in urna faucibus, volutpat enim a,
-                    maximus ipsum</p>
+                <p><br/><br/><br/><br/><br/><br/><br/><br/></p>
             </div><!--item2-mosaico-->
 
         </div><!--flex-mosaico-->
@@ -35,12 +30,7 @@
 
             <div class="item-2-mosaico" style="order:1;">
                 <h2>João Paulo PINHEIRO MELO</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer vitae justo eu sapien ultricies dignissim. Vestibulum
-                    feugiat interdum pharetra. Curabitur vulputate a lectus nec
-                    maximus. Quisque id interdum eros. Donec porta nibh eget
-                    diam consectetur fringilla. Proin in urna faucibus, volutpat
-                    enim a, maximus ipsum</p>
+                <p><br/><br/><br/><br/><br/><br/><br/><br/></p>
             </div><!--item2-mosaico-->
 
         </div><!--flex-mosaico-->
@@ -50,12 +40,7 @@
 
             <div class="item-2-mosaico">
                 <h2>Matheus GUIMARÃES DE MOURA</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer vitae justo eu sapien ultricies dignissim. Vestibulum
-                    feugiat interdum pharetra. Curabitur vulputate a lectus nec
-                    maximus. Quisque id interdum eros. Donec porta nibh eget diam
-                    consectetur fringilla. Proin in urna faucibus, volutpat enim a,
-                    maximus ipsum</p>
+                <p><br/><br/><br/><br/><br/><br/><br/><br/></p>
             </div><!--item2-mosaico-->
 
         </div><!--flex-mosaico-->
@@ -65,12 +50,7 @@
 
             <div class="item-2-mosaico" style="order:1;">
                 <h2>João Lucas SANTOS PENHA DE OLIVEIRA</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer vitae justo eu sapien ultricies dignissim.
-                    Vestibulum feugiat interdum pharetra. Curabitur
-                    vulputate a lectus nec maximus. Quisque id interdum eros.
-                    Donec porta nibh eget diam consectetur fringilla.
-                    Proin in urna faucibus, volutpat enim a, maximus ipsum</p>
+                <p><br/><br/><br/><br/><br/><br/><br/><br/></p>
             </div><!--item2-mosaico-->
 
         </div><!--flex-mosaico-->
@@ -80,12 +60,7 @@
 
             <div class="item-2-mosaico">
                 <h2>Joel Kalil DA SILVA PONTES</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer vitae justo eu sapien ultricies dignissim.
-                    Vestibulum feugiat interdum pharetra. Curabitur
-                    vulputate a lectus nec maximus. Quisque id interdum eros.
-                    Donec porta nibh eget diam consectetur fringilla.
-                    Proin in urna faucibus, volutpat enim a, maximus ipsum</p>
+                <p><br/><br/><br/><br/><br/><br/><br/><br/></p>
             </div><!--item2-mosaico-->
 
         </div><!--flex-mosaico-->
@@ -95,12 +70,7 @@
 
             <div class="item-2-mosaico" style="order:1;">
                 <h2>Sun YISHAN</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer vitae justo eu sapien ultricies dignissim.
-                    Vestibulum feugiat interdum pharetra. Curabitur vulputate
-                    a lectus nec maximus. Quisque id interdum eros. Donec porta
-                    nibh eget diam consectetur fringilla. Proin in urna faucibus,
-                    volutpat enim a, maximus ipsum</p>
+                <p><br/><br/><br/><br/><br/><br/><br/><br/></p>
             </div><!--item2-mosaico-->
 
         </div><!--flex-mosaico-->
