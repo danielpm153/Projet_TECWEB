@@ -48,24 +48,39 @@ function inscrireUser() {
     var testePrenom = regexNom.test(String(prenom));
 
 
-    // if (testEmail && testePasse && testeNom && testePrenom) {
-    if (true) {
+    //if (testEmail && testePasse && testeNom && testePrenom) {
+     if (true) {
         $.ajax({
             type: "POST",
             url: apiRoot + "/users",
             data: { "email": email, "passe": passe, "nom": nom, "prenom": prenom, "dateNaissance": dateNaissance, "telephone": telephone },
             success: function(oRep) {
                 console.log("Sucess: POST /users");
+                sendAlert("Success", "Enregistrement réussi", "success", function() {
+                    cleanSignUp();
+                    $(".backGroundGrayCenterContent").fadeOut(200);
+                });
             },
             error: function(error) {
                 console.log("Erreur: POST /users");
+                sendAlert("Failed", "Le site n'a pas pu accéder au serveur", "failed");
             },
             dataType: "json"
         });
     } else {
         console.log("Erro Regex");
+        sendAlert("Failed", "Certains champs ont été mal renseignés!", "failed");
     }
 
+}
+
+function cleanSignUp() {
+    $("input[name='nomSignup']").val("");
+    $("input[name='prenomSignup']").val("");
+    $("input[name='dateSignup']").val("");
+    $("input[name='telSignup']").val("");
+    $("input[name='emailSignup']").val("");
+    $("input[name='passeSignup']").val("");
 }
 
 
@@ -88,7 +103,8 @@ function showCour(e) {
             $("#viewUserModal > div > div > p:nth-child(1)").html(oRep.cour[0].titre);
             $("#viewUserModal > div > div > p:nth-child(2)").html("Domaine : " + oRep.cour[0].domaine);
             $("#viewUserModal > div > div > p:nth-child(3)").html("Langue : " + oRep.cour[0].langue);
-            $("#viewUserModal > div > div > p:nth-child(4)").html("Description : " + oRep.cour[0].descriptions);
+            $("#viewUserModal > div > div > p:nth-child(4)").html("Cout : " + oRep.cour[0].cout);
+            $("#viewUserModal > div > div > p:nth-child(5)").html("Description : " + oRep.cour[0].descriptions);
 
         },
         error: function(error) {
@@ -123,7 +139,7 @@ function alertDefault(page) {
     else if (page == "signup") {
         $("#viewSignUp").fadeIn();
     } else if ("signout") {
-        sendAlert("Success", "vous avez été déconnecté", "alert", function() {
+        sendAlert("Success", "vous avez été déconnecté", "success", function() {
             window.location.href = 'controleur.php?action=Logout';
         });
     }
@@ -144,6 +160,7 @@ function showUser(e) {
             $("#viewUserModal > div > div > p:nth-child(2)").html("Prenom : " + oRep.user.prenom);
             $("#viewUserModal > div > div > p:nth-child(3)").html("Date de Naissance : " + oRep.user.data_naissance);
             $("#viewUserModal > div > div > p:nth-child(4)").html("E-mail : " + oRep.user.email);
+            $("#viewUserModal > div > div > p:nth-child(5)").html("");
         },
         error: function(error) {
             console.log("Erreur: GET /users/id");

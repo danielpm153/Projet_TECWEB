@@ -57,3 +57,11 @@
     top: 0;
     z-index: 80;
 }
+
+#logoHeader {
+    height: 100px;
+}
+
+#logoHeader > img {
+    width: 100px;
+}

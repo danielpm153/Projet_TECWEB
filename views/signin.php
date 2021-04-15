@@ -12,10 +12,10 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
 			<p class="titleForm">Sign In</p>
 
 			<p>E-mail*</p>
-			<input type="text" name="email" maxlength="100" value="alo" />
+			<input type="text" name="email" maxlength="100"/>
 
 			<p>Passe*</p>
-			<input type="password" name="passe" maxlength="100" value="1234" />
+			<input type="password" name="passe" maxlength="100"/>
 		</div>
 		<input type="button" value="Connexion" onclick="login()" />
 	</div>

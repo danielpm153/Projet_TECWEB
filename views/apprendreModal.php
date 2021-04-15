@@ -8,21 +8,20 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
 
 <div id="viewApprendreModal" class="backGroundGrayCenterContent">
 	<div class="form" id="formSelectionApprendre">
-		<div style="width: 100%;">
-			<p class="titleForm">Sign Up</p>
+		<div >
+			<p class="titleForm titre">Titre:</p>
 		</div>
 
-		<div>
-			<p class="titre">Titre:</p>
-			<p class="professour">Professour:</p>
-			<p class="cout">Cout:</p>
+		<div class="info">
 			<p class="domaine">Domaine:</p>
 			<p class="langue">Langue:</p>
+			<p class="cout">Cout:</p>
+			<p class="professour">Professour:</p>
 			<p class="description">Description:</p>
 		</div>
 		<div value="0" class="prevNext">
-			<p><b>&lt</b></p>
-			<p><b>&gt</b></p>
+			<p>&lt</p>
+			<p>&gt</p>
 		</div>
 		<div class="dateInterval">
 			<p></p>

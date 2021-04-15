@@ -31,7 +31,7 @@ function getListTableApprendre() {
 }
 
 function openApprendreModal(index) {
-    horaireChoisi = [];
+    horaireChoisi = null;
 
     var cour = coursDisponibles[index];
 
@@ -41,7 +41,7 @@ function openApprendreModal(index) {
 
     $("#viewApprendreModal").fadeIn();
     var area = $("#viewApprendreModal > div");
-    area.find(".titre").html("<span>Titre:</span> " + cour.titre);
+    area.find(".titre").html(cour.titre);
     area.find(".professour").html("<span>Professour:</span> " + prenomProf + " " + nomProf);
     area.find(".cout").html("<span>Cout:</span> " + cour.cout);
     area.find(".domaine").html("<span>Domaine:</span> " + cour.nomDomaine);
@@ -147,7 +147,7 @@ function toggleGridModalApprendre(event) {
         var cellNew = matrixHoraires[horaire - 1][semaine];
         var contenu = { "horaire": horaire + 7, "semaine": semaine };
 
-        if (horaireChoisi.length != 0) {
+        if (horaireChoisi != null) {
             var cellExists = matrixHoraires[horaireChoisi.horaire - 8][horaireChoisi.semaine];
             cellExists.element.removeClass("posteChoisi");
             if (horaire + 7 === horaireChoisi.horaire && semaine === horaireChoisi.semaine) {
@@ -203,7 +203,11 @@ function confirmerDemand(index) {
             success: function(oRep) {
                 console.log("Sucess: POST /reservations");
                 coursDisponibles[index].horairesOcupes.push({ "id_disponibilite": disponibilite.id_disponibilite, "semaine": semaineSelecione, "horaire": horaireSelecione, "date": dateSelecione });
-                remplirGrid(index, week);
+                //remplirGrid(index, week);
+                $(".backGroundGrayCenterContent").fadeOut();
+                sendAlert("Success", "Enregistrement réussi", "success", function() {
+                    $("#confirmationModal").fadeOut(200);
+                });
             },
             error: function(error) {
                 console.log("Erreur: POST /reservations");

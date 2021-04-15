@@ -13,6 +13,7 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
 			<p>Prenom : </p>
 			<p>Date de Naissance : </p>
 			<p>E-mail : </p>
+			<p></p>
 		</div>
 	</div>
 </div>

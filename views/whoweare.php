@@ -49,7 +49,7 @@
             <div style="background-image:url('resources/imgs/matheus.jpg');" class="item-1-mosaico"></div><!--item1-mosaico-->
 
             <div class="item-2-mosaico">
-                <h2>Matheus MOURA</h2>
+                <h2>Matheus GUIMARÃES DE MOURA</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Integer vitae justo eu sapien ultricies dignissim. Vestibulum
                     feugiat interdum pharetra. Curabitur vulputate a lectus nec
@@ -64,7 +64,7 @@
             <div style="background-image:url('resources/imgs/jones.jpg');order:2;" class="item-1-mosaico"></div><!--item1-mosaico-->
 
             <div class="item-2-mosaico" style="order:1;">
-                <h2>João Lucas</h2>
+                <h2>João Lucas SANTOS PENHA DE OLIVEIRA</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Integer vitae justo eu sapien ultricies dignissim.
                     Vestibulum feugiat interdum pharetra. Curabitur
@@ -79,7 +79,7 @@
             <div style="background-image:url('resources/imgs/joel.jpg');" class="item-1-mosaico"></div><!--item1-mosaico-->
 
             <div class="item-2-mosaico">
-                <h2>Joel KALIL</h2>
+                <h2>Joel Kalil DA SILVA PONTES</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Integer vitae justo eu sapien ultricies dignissim.
                     Vestibulum feugiat interdum pharetra. Curabitur

@@ -1,17 +1,12 @@
 <?php
+// Si la page est appelée directement par son adresse, on redirige en passant pas la page index
+if (basename($_SERVER["PHP_SELF"]) != "index.php") {
+	header("Location:../index.php");
+	die("");
+}
+?>
 
-		// Si la page est appelée directement par son adresse, on redirige en passant pas la page index
-		if (basename($_SERVER["PHP_SELF"]) != "index.php")
-		{
-			header("Location:../index.php");
-			die("");
-		}
-
-		?>
-<head>
-    <link rel="stylesheet" type="text/css" href='css/footer.css'>
-</head>
-        <footer class="main-footer">
+	<footer class="main-footer">
             <div class="container_footer">
                 <div class="row_footer pt-5_footer">
                     <div class="col-12_footer col-lg-4_footer text-center_footer text-lg-right_footer">
@@ -38,6 +33,5 @@
                 </div>
             </div>
         </footer>
-
 	</body>
 </html>

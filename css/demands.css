@@ -1,3 +1,7 @@
+#tableDemands tr td:nth-child(1) {
+    cursor: pointer;
+}
+
 #tableDemands tr th:nth-child(2),
 #tableDemands tr td:nth-child(2) {
     width: 20%;
@@ -27,8 +31,25 @@
     text-align: center;
 }
 
-#tableDemands tr th:nth-child(7),
-#tableDemands tr td:nth-child(7) {
-    width: 15%;
-    text-align: center;
+#tableDemands tr td:hover:not(#tableDemands tr td:nth-child(6)) {
+    background-color: rgba(0, 128, 128, 0.295);
+}
+
+#viewUserModal>div {
+    min-width: 20%;
+}
+
+#viewUserModal>div>div>p,
+#confirmationModal>div>div p {
+    text-align: center !important;
+}
+
+#tableBackDemands {
+    max-width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#tableBackDemands .table-scroll {
+    max-height: 60vh;
 }
