@@ -3,12 +3,18 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
     header("Location:../index.php?view=demands");
     die("");
 }
+include("views/defaults/userModal.php");
+include("views/defaults/confirmationModal.php");
 ?>
 
+
 <div class="contenu">
-    <h1>Demands</h1>
-    <h3>Bienvenue dans notre site de cours prive !</h3>
-    <div class="table-wrapper">
+    <div class="headerPage">
+        <h2>Demands</h2>
+        <p>Sur cet écran, vous pouvez voir toutes </p>
+    </div>
+    <div class="formBackGround" id="tableBackDemands">
+        <div class="background-box-shadown"></div>
         <div class="table-scroll">
 
             <table id="tableDemands" style="width:100%">
@@ -17,26 +23,24 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
                     <th>Professour</th>
                     <th>Date</th>
                     <th>Horaire</th>
-                    <th>Cout</th>
                     <th>Status</th>
-                    <th></th>
+                    <th>Actions</th>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td>Jill</td>
                     <td>Smith</td>
                     <td>11/04/2021</td>
                     <td>14:00</td>
-                    <td>50</td>
                     <td>En attend</td>
                     <td>
                         <input type="button" value="X" onclick="" />
                     </td>
-                </tr>
+                </tr> -->
 
 
             </table>
             <?php
-            // echo '<script type="text/javascript">getListTableDemands("' . $_SESSION["hash"] . '");</script>';
+            echo '<script type="text/javascript">getListTableDemands();</script>';
             ?>
         </div>
     </div>

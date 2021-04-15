@@ -37,3 +37,13 @@
     width: 10%;
     text-align: center;
 }
+
+#tableBackRecords {
+    max-width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#tableBackRecords .table-scroll {
+    max-height: 60vh;
+}

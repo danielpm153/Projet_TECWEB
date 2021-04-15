@@ -6,9 +6,12 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
 ?>
 
 <div class="contenu">
-    <h1>Records</h1>
-    <h3>Bienvenue dans notre site de cours prive !</h3>
-    <div class="table-wrapper">
+    <div class="headerPage">
+        <h2>Records</h2>
+        <p>Sur cet écran, vous pouvez voir toutes les records de cours.</p>
+    </div>
+    <div class="formBackGround" id="tableBackRecords">
+        <div class="background-box-shadown"></div>
         <div class="table-scroll">
 
             <table id="tableRecords" style="width:100%">

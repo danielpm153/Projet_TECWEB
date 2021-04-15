@@ -14,7 +14,8 @@
 
 #tableInvitations tr th:nth-child(3),
 #tableInvitations tr td:nth-child(3) {
-    width: 10%;
+    width: 100px;
+    min-width: 100px;
     text-align: center;
 }
 
@@ -55,13 +56,21 @@
 #tableBackInvitations .table-scroll {
     max-height: 60vh;
 }
-
+/*
 #tableBackCours {
     position: absolute;
     width: 34%;
     max-width: 34%;
     right: 20px;
     top: 300px;
+}
+*/
+#tableBackCours {
+    position: relative;
+    width: 34%;
+    max-width: 34%;
+    left: 65%;
+    top: -77px;
 }
 
 #tableCours {

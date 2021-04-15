@@ -8,7 +8,7 @@ if (basename($_SERVER["PHP_SELF"]) != "index.php") {
 
 <div id="viewSignUp" class="backGroundGrayCenterContent">
 	<div class="form" style="width: 40%; max-width: 700px;">
-		<div>
+		<div style="width: 100%;">
 			<p class="titleForm">Sign Up</p>
 		</div>
 

@@ -5,6 +5,7 @@ function initInvitation() {
         headers: { "debug-data": true, "hash": localStorage.getItem('hash') },
         success: function(oRep) {
             console.log("Sucess: GET /getReservationsByIdEnseigner");
+            console.log(oRep);
             for (var i in oRep.reservations) {
                 var line = "<td value='" + oRep.reservations[i].id_cour + "' onclick='showCour(event)'>" + oRep.reservations[i].titre + "</td>";
                 line += "<td value='" + oRep.reservations[i].id_userEleve + "' onclick='showUser(event)'>" +
@@ -15,11 +16,11 @@ function initInvitation() {
                 line += "<td>" + oRep.reservations[i].status + "</td>";
                 line += "<td class='imgFormActions'>";
 
-                if (oRep.reservations[i].id_status == 1) {
+                if (oRep.reservations[i].id_status === '1') {
                     line += "<img src='resources/ok.png' name='2' value='" + oRep.reservations[i].id_reservation + "' onclick='updateStatusReservation(event)'/>";
                 }
-
                 line += "<img src='resources/close.png' name='3' value='" + oRep.reservations[i].id_reservation + "' onclick='updateStatusReservation(event)'/></td>";
+
                 $("#tableInvitations").append($("<tr>").clone(true).html(line));
             }
         },
@@ -36,7 +37,7 @@ function initInvitation() {
         headers: { "debug-data": true, "hash": localStorage.getItem('hash') },
         success: function(oRep) {
             console.log("Sucess: GET /coursByIdEnseigner");
-            console.log(oRep.cour);
+            // console.log(oRep.cour);
             for (var i in oRep.cour) {
                 var line = "<td value='" + oRep.cour[i].id_cour + "' onclick='showCour(event)'>" + oRep.cour[i].titre + "</td>";
                 line += "<td class='imgFormActions'>";

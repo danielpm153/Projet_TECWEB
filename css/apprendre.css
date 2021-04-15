@@ -26,7 +26,7 @@
 }
 
 .tableModalApprendre tr td:not(:first-child):not(.posteIndisponible):not(.posteOccupe):not(.posteChoisi):hover {
-    background-color: aqua;
+    background-color: rgb(185, 191, 238);
     cursor: pointer;
 }
 
@@ -45,8 +45,24 @@
     flex-wrap: wrap;
 }
 
-#viewApprendreModal>.form>div>p {
+#viewApprendreModal>.form>.info {
+    width: 100%;
+}
+
+#viewApprendreModal>.form>.dateInterval>p,
+#viewApprendreModal>.form>.prevNext>p {
     width: 45%;
+}
+
+#viewApprendreModal>div .cout,
+#viewApprendreModal>div .langue,
+#viewApprendreModal>div .domaine {
+    width: 29%;
+}
+
+#viewApprendreModal>div .description,
+#viewApprendreModal>div .professour {
+    width: 100%;
 }
 
 .posteIndisponible {
@@ -61,12 +77,21 @@
 
 .posteChoisi {
     cursor: pointer;
-    background-color: rgb(35, 233, 45);
+    background-color: rgb(88, 184, 69);
+}
+
+.posteChoisi:hover {
+    background-color: rgb(136, 187, 126);
 }
 
 .prevNext>p {
     text-align: center;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.prevNext>p:hover {
+    color: rgb(185, 191, 238);
 }
 
 .prevNext[value="0"]>p:first-child {
@@ -85,24 +110,25 @@
     margin: auto;
 }
 
-#formSelectionApprendre > div:first-of-type {
+#formSelectionApprendre>div:first-of-type {
     max-width: calc(100% + 60px);
     min-width: calc(100% + 60px);
 }
 
 #formSelectionApprendre .titleForm {
     width: calc(100%) !important;
+    margin: 0;
 }
 
 #formSelectionApprendre {
     top: 7%;
-    min-height: 84%; 
-    max-height: 84%; 
+    min-height: 84%;
+    max-height: 84%;
     min-width: 45%;
 }
 
 #formSelectionApprendre p:not(#formSelectionApprendre p.titleForm) {
-    font-size: 1.7vh;
+    font-size: 10pt;
 }
 
 #formSelectionApprendre p span {
@@ -110,7 +136,7 @@
     color: teal;
 }
 
-#formSelectionApprendre table tr{
+#formSelectionApprendre table tr {
     font-size: 1.4vh;
 }
 

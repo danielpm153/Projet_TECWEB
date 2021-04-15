@@ -19,7 +19,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
-	<title>TinyMVC</title>
+	<title>Scool</title>
 	<link rel="stylesheet" href="css/styles.css">
 
 	<link rel="stylesheet" href="css/alerts.css">
@@ -32,6 +32,8 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 	<link rel="stylesheet" href="css/demands.css">
 	<link rel="stylesheet" href="css/records.css">
 	<link rel="stylesheet" href="css/enseigner.css">
+
+	<link rel="stylesheet" type="text/css" href='css/footer.css'>
 
 
 	<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
@@ -63,7 +65,7 @@ echo "<?xml version=\"1.0\" encoding=\"utf-8\" ?>";
 
 	<div id="navbar">
 
-		<a href="controleur.php?action=Accueil"><b>Cursos Brabos Demais</b></a>
+		<a id="logoHeader" href="controleur.php?action=Accueil"><img src="resources/logo.png"/></a>
 
 		<?php
 		$view = valider("view");
